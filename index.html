@@ -6,6 +6,7 @@
     <title>O Sacrifício que Mudou o Mundo | Kathleen Lima</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
+        /* ... (mesmo CSS do seu código anterior) ... */
         * {
             margin: 0;
             padding: 0;
@@ -391,7 +392,8 @@
         <div class="content">
             <div class="book-cover">
                 <div class="cover-container">
-                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Capa do Livro - O Sacrifício que Mudou o Mundo" class="cover-img" />
+                    <!-- Alterado para imagem local -->
+                    <img src="capa.png" alt="Capa do Livro - O Sacrifício que Mudou o Mundo" class="cover-img" />
                 </div>
             </div>
             <div class="book-details">
@@ -468,31 +470,4 @@
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="mailto:kathleenlima1997@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://wa.me/5512966662233" class="social-link">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-        </footer>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const coverContainer = document.querySelector('.cover-container');
-            window.addEventListener('mousemove', (e) => {
-                const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-                const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-                coverContainer.style.transform = rotateY(${xAxis}deg) rotateX(${yAxis}deg);
-            });
-            const downloadBtn = document.querySelector('.btn-download');
-            downloadBtn.addEventListener('click', function () {
-                const originalHTML = this.innerHTML;
-                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparando download...';
-                setTimeout(() => {
-                    this.innerHTML = originalHTML;
-                }, 1500);
-            });
-        });
-    </script>
-</body>
-</html>
+                    <i class="fas fa-envelope
